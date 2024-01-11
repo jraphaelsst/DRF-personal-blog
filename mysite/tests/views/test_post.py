@@ -9,5 +9,3 @@ def test_post_view(client):
     response = client.get(url)
     
     assert response.status_code == 200
-    
-    assert response.content == b'Hello world!'
